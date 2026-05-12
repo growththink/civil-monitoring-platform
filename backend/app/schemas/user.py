@@ -28,6 +28,7 @@ class UserUpdate(BaseModel):
 class UserOut(UserBase):
     model_config = ConfigDict(from_attributes=True)
 
+    email: str
     id: uuid.UUID
     is_active: bool
     created_at: datetime
